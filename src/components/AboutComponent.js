@@ -88,7 +88,7 @@ function RenderPartner ({partner}) {
             </React.Fragment>
         )
     }
-    return ( <div /> )
+    return  <div /> 
 }
 
 export default About;
