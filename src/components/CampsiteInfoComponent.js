@@ -43,7 +43,7 @@ class CommentForm extends Component {
                     <ModalBody>
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             <div className= "form-group">
-                                <Label htmlFor="rating" md={2}>Rating</Label>
+                                <Label htmlFor="rating" >Rating</Label>
                                 <Control.select model=".rating" id="rating" name="rating" className="form-control">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -53,7 +53,7 @@ class CommentForm extends Component {
                                 </Control.select>
                             </div>
                             <div className="form-group">
-                                <Label htmlFor="author" md={4}>Your Name</Label>
+                                <Label htmlFor="author" >Your Name</Label>
                                 <Control.text model=".author" id="author" name="author"
                                     placeholder="Your Name" className="form-control"
                                     validators={{
@@ -73,10 +73,10 @@ class CommentForm extends Component {
                                 /> 
                             </div>
                             <div className= "form-group">
-                                <Label htmlFor="text" md={2}>Comment</Label>
+                                <Label htmlFor="text" >Comment</Label>
                                 <Control.textarea model=".text" id="text" name="text" rows="6" className="form-control" />
                             </div>
-                            <Button type="submit" value="submit" color="primary">Submit Comment</Button>
+                            <Button type="submit" value="submit" color="primary">Submit</Button>
                         </LocalForm>
                     </ModalBody>
                 </Modal>
