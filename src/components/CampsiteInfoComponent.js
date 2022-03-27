@@ -97,7 +97,7 @@ function RenderCampsite({campsite}) {
             <FadeTransform
                 in 
                 transformProps={{
-                    exitTransform: 'scale(0.5) translateY(-50%)'
+                    exitTransform: 'scale(0.1) translateZ(-50%)'
                 }}
                 >
                 <Card>
@@ -111,7 +111,7 @@ function RenderCampsite({campsite}) {
     );
 }
 
-// Renders Comments and a Comment form button
+
 function RenderComments({comments, postComment, campsiteId}) {
     if (comments) {
         return(
